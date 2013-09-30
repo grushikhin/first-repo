@@ -4,7 +4,15 @@
     root.require = {
         baseUrl: "./",
         paths: {
-            "jQuery": "vendor/jquery/jquery"
+            "jquery": "vendor/jquery/jquery",
+            "backbone": "vendor/backbone/backbone",
+            "underscore": "vendor/lodash/dist/lodash"
+        },
+        shim: {
+            backbone: {
+                deps: ['underscore', 'jquery'],
+                exports: 'Backbone'
+            }
         }
     };
 
