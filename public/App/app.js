@@ -1,11 +1,15 @@
 define([
     'backbone',
     'lib/router'
-], function (backbone, router) {
-    Backbone.history.start();
+], function (Backbone, router) {
+
+    Backbone.history.start({
+        pushState: true,
+        root: '/'
+    });
 
     Backbone.history.navigate('posts');
-    debugger;
+    window.router = router;
     return '';
 
 });

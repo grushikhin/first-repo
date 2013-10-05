@@ -8,7 +8,7 @@ define([
         routes: {
             "":                      "index",
             "posts":                 "posts",
-            "post/p:id":             "post"
+            "post/:id":              "post"
         },
 
         index: function() {
