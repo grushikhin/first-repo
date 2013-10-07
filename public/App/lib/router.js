@@ -6,9 +6,10 @@ define([
     var Router = Backbone.Router.extend({
 
         routes: {
-            "":                      "index",
-            "posts":                 "posts",
-            "post/:id":              "post"
+            "":                     "index",
+            "posts":                "posts",
+            "post/:id":             "post"
+
         },
 
         index: function() {
