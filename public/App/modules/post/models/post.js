@@ -8,7 +8,7 @@ define([
 
     return Model.extend({
         defaults: {
-            date: null,
+            date: new Date(),
             title: null,
             text: null
         }
