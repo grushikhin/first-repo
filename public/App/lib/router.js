@@ -9,6 +9,7 @@ define([
             "":                     "index",
             "posts":                "posts",
             "post/:id":             "post"
+
         },
 
         index: function() {

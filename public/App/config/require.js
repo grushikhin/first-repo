@@ -2,7 +2,9 @@
     'use strict';
 
     root.require = {
-        baseUrl: "/app",
+
+        baseUrl: "/app/",
+
         paths: {
             "jquery": "vendor/jquery/jquery",
             "backbone": "vendor/backbone/backbone",
