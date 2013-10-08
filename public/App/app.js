@@ -1,7 +1,13 @@
 define([
+
     'backbone',
-    'lib/router'
-], function (Backbone, router) {
+    'lib/router',
+    'modules/common/views/layout'
+
+
+], function (Backbone, router, LayoutView) {
+    'use strict';
+    var layout = new LayoutView();
 
 
     Backbone.history.start({
@@ -9,7 +15,6 @@ define([
         root: '/'
     });
 
-    Backbone.history.navigate('posts');
-
+    document.getElementById('main').innerHTML(layout.render());
 
 });

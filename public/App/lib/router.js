@@ -1,7 +1,6 @@
 define([
     'backbone'
 ], function (Backbone) {
-    debugger;
 
     var Router = Backbone.Router.extend({
 

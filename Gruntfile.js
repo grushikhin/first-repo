@@ -8,7 +8,6 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     hostname: 'grushikhin.local',
-                    port: 8080,
                     base: 'public',
                     keepalive: true,
                     middleware: function(connect, options) {
