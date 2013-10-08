@@ -4,7 +4,6 @@ define([
     'hbs!modules/common/templates/layout'
 
 ], function(View, layoutTemplate) {
-    debugger;
 
     return View.extend({
 

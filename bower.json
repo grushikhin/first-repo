@@ -5,8 +5,8 @@
         "backbone": "1.0.0",
         "jquery": "2.0.3",
         "handlebars": "1.0.0",
-        "handlebarsRequirePlugin": "https://SlexAxton@github.com/SlexAxton/require-handlebars-plugin.git#0.4.0",
-        "lodash": "2.2.0",
+        "hbs": "0.4.0",
+        "lodash": "1.3.1",
         "backbone.localStorage": "1.1.6"
 
 

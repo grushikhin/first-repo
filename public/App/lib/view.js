@@ -9,8 +9,8 @@ define([
             if (!this.template) {
                 return false;
             }
-            var markup = '';
-            return this;
+            var markup = this.template(this.serialize());
+            return markup;
         },
         serialize: function() {
             return {};

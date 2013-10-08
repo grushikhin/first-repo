@@ -14,6 +14,6 @@ define([
         root: '/'
     });
 
-    document.getElementById('main').innerHTML(layout.render());
+    document.getElementById('main').innerHTML = layout.render();
 
 });

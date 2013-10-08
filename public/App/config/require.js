@@ -8,12 +8,13 @@
         paths: {
             "jquery": "vendor/jquery/jquery",
             "backbone": "vendor/backbone/backbone",
-            "underscore": "vendor/lodash/dist/lodash",
+            "underscore": "vendor/lodash/dist/lodash.underscore",
             "localStorage": "vendor/Backbone.localStorage/backbone.localStorage",
+
             "handlebars": "vendor/handlebars/handlebars",
-            "hbs": "vendor/handlebarsRequirePlugin/hbs",
-            "i18nprecompile": "vendor/handlebarsRequirePlugin/hbs/i18nprecompile",
-            "json2": "vendor/handlebarsRequirePlugin/hbs/json2"
+            "hbs": "vendor/hbs/hbs",
+            "i18nprecompile": "vendor/hbs/hbs/i18nprecompile",
+            "json2": "vendor/hbs/hbs/json2"
 
         },
         shim: {
