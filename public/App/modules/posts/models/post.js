@@ -1,6 +1,6 @@
 define([
 
-    'lib/view'
+    'lib/model'
 
 ], function(Model) {
 

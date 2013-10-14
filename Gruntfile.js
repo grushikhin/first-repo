@@ -25,7 +25,26 @@ module.exports = function(grunt) {
                 }
             }
         }
+//        ,
+//        stylus: {
+//            // Компиляция Stylus в CSS
+//            compile: {
+////                options: {
+////                    'compress': true,
+////                    'paths': ['public/js/modules/common/styles/']
+////                },
+//                files: {
+//                    'public/js/modules/common/styles/menu.css': 'menu.styl'
+//                }
+//            }
+//        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
+
+//    // Загрузка модуля для компиляции Стилуса
+//    grunt.loadNpmTasks('grunt-stylus');
+//
+//    // Объявление тасков
+//    grunt.registerTask('default', 'stylus');
 };
