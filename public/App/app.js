@@ -1,20 +1,26 @@
 define([
+    'marionette',
+    'modules/common/views/navigation',
+    'styl!modules/common/styles/common'
 
-    'backbone',
-    'lib/router',
-    'modules/common/views/layout'
 
-
-], function (Backbone, router, LayoutView) {
+], function (marionette, NavigationView, _commonStyles_) {
     'use strict';
-    var layout = new LayoutView();
 
+    var app = new Marionette.Application();
 
-    Backbone.history.start({
-        pushState: true,
-        root: '/'
+    app.addRegions({
+        headerRegion: 'header',
+        contentRegion: 'section',
+        footerRegion: 'footer'
     });
 
-    document.getElementById('main').innerHTML(layout.render());
+    app.addInitializer(function () {
+        app.headerRegion.show(new NavigationView());
+    });
+
+    app.start();
+
+    return app;
 
 });
